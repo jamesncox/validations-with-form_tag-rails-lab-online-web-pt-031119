@@ -28,7 +28,7 @@ class AuthorsController < ApplicationController
       redirect_to author_path(@author)
     else
       render :edit
-    end 
+    end
   end
 
   private
