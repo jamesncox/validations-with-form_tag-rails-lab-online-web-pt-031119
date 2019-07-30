@@ -17,6 +17,14 @@ class AuthorsController < ApplicationController
     end
   end
 
+  def edit
+    @author = Author.update
+  end
+
+  def update
+
+  end
+
   private
 
   def author_params
