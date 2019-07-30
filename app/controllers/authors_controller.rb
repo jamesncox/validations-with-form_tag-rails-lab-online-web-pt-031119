@@ -9,12 +9,12 @@ class AuthorsController < ApplicationController
 
   def create
     @author = Author.create(author_params)
-    
-    if @author = Author.save  
+
+    if @author = Author.save
       redirect_to author_path(@author)
-    else 
-      render :new 
-    end 
+    else
+      render :new
+    end
   end
 
   private
